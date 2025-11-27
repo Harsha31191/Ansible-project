@@ -32,7 +32,7 @@ jobs:
           context: ./digitalwallet_backend
           file: ./digitalwallet_backend/backend.Dockerfile
           push: true
-          tags: ${{ secrets.DOCKER_USERNAME }}/ansible-backendd:latest
+          tags: harshavardhan31191/ansible-backend:latest
 
       # Step 5 — Build & Push Frontend Image
       - name: Build and Push Frontend Image
@@ -41,4 +41,4 @@ jobs:
           context: ./DigitalWalletApp
           file: ./DigitalWalletApp/frontend.Dockerfile
           push: true
-          tags: ${{ secrets.DOCKER_USERNAME }}/ansible-frontendd:latest
+          tags: harshavardhan31191/ansible-frontend:latest
